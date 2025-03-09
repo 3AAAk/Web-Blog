@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-buttons {
+    margin-right: 20px;
+}
+
+.auth-buttons a {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.auth-buttons .register {
+    background: #28a745;
+}
+
+.auth-buttons a:hover {
+    opacity: 0.8;
+}
+
+.new-post {
+    display: block;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto;
+    border-radius: 5px;
+    width: 150px;
+}
+
+main {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.post {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.actions {
+    margin-top: 10px;
+}
+
+.actions a {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}

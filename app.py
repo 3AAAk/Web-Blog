@@ -1,18 +1,9 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-from flask_login import LoginManager
-from config import Config
+from routes.auth import auth
 
 app = Flask(__name__)
-app.config.from_object(Config)
 
-db.init_app(app)
-migrate = Migrate(app, db)
-login_manager = LoginManager(app, db)
-
-from routes import *
+app.register_blueprint(auth)
 
 if __name__ == '__main__':
     app.run(debug=True)
-

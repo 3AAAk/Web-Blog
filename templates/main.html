@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой блог</title>
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+    <header>
+        <h1>Мой блог: {{current_user.username}}</h1>
+        <div class="auth-buttons">
+            <a href="register" class="register">Регистрация</a>
+            <a href="login" class="login">Вход</a>
+        </div>
+    </header>
+
+    <main>
+        <a href="new-post.html" class="new-post">Добавить пост</a>
+
+        <article class="post">
+            <h2>Заголовок поста</h2>
+            <p>Текст поста... Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="actions">
+                <a href="#" class="like">❤️ 0</a>
+                <a href="#" class="comment">💬 0</a>
+            </div>
+        </article>
+
+        <article class="post">
+            <h2>Еще один пост</h2>
+            <p>Еще один текст поста... Lorem ipsum dolor sit amet, consectetur.</p>
+            <div class="actions">
+                <a href="#" class="like">❤️ 0</a>
+                <a href="#" class="comment">💬 0</a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
